@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import { app, db } from '../../firebase.config';
 import ArrowRight from '../assets/svg/keyboardArrowRightIcon.svg';
 import VisibilityIcon from '../assets/svg/visibilityIcon.svg';
+import OAuth from '../components/OAuth';
 function SignUp() {
   const [formData, setFormData] = useState({
     email: '',
@@ -102,7 +103,7 @@ function SignUp() {
           </button>
         </div>
       </form>
-      {/* {Goofgle Auth} */}
+      <OAuth />
 
       <Link to='/sign-in' className='registerLink'>
         Sign In Now

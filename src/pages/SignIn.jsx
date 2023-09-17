@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import ArrowRight from '../assets/svg/keyboardArrowRightIcon.svg';
 import VisibilityIcon from '../assets/svg/visibilityIcon.svg';
+import OAuth from '../components/OAuth';
 function SignIn() {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [showPassword, setShowPassword] = useState(null);
@@ -30,7 +31,7 @@ function SignIn() {
         navigate('/');
       }
     } catch (error) {
-      toast.error("Re-Enter User Details")
+      toast.error('Re-Enter User Details');
     }
   };
 
@@ -79,7 +80,7 @@ function SignIn() {
           </button>
         </div>
       </form>
-      {/* {Goofgle Auth} */}
+      <OAuth />
 
       <Link to='/sign-up' className='registerLink'>
         Don&apos;t have an account ? <br />
