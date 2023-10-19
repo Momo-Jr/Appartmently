@@ -62,7 +62,7 @@ button {
 
 .primaryButton {
   cursor: pointer;
-  background: #00cc66;
+  background: #00cca0;
   border-radius: 1rem;
   padding: 0.85rem 2rem;
   color: #ffffff;
@@ -141,7 +141,7 @@ button {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #00cc66 transparent #00cc66 transparent;
+  border-color: #00cca0 transparent #00cca0 transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
@@ -236,7 +236,7 @@ button {
 
 .forgotPasswordLink {
   cursor: pointer;
-  color: #00cc66;
+  color: #00cca0;
   font-weight: 600;
   text-align: right;
 }
@@ -278,7 +278,7 @@ button {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #00cc66;
+  background-color: #00cca0;
   border-radius: 50%;
 }
 
@@ -317,7 +317,7 @@ button {
 
 .registerLink {
   margin-top: 4rem;
-  color: #00cc66;
+  color: #00cca0;
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
@@ -484,7 +484,7 @@ button {
   margin-top: 0.5rem;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #00cc66;
+  color: #00cca0;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -557,7 +557,7 @@ button {
 
 .listingType {
   padding: 0.25rem 0.5rem;
-  background-color: #00cc66;
+  background-color: #00cca0;
   color: #ffffff;
   border-radius: 2rem;
   display: inline;
@@ -660,7 +660,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  background-color: #00cc66;
+  background-color: #00cca0;
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
 }
@@ -678,7 +678,7 @@ button {
 .changePersonalDetails {
   cursor: pointer;
   font-weight: 600;
-  color: #00cc66;
+  color: #00cca0;
 }
 
 .profileCard {
@@ -776,7 +776,7 @@ button {
 }
 
 .formButtonActive {
-  background-color: #00cc66;
+  background-color: #00cca0;
   color: #ffffff;
 }
 
@@ -833,7 +833,7 @@ button {
 }
 
 .formInputFile::-webkit-file-upload-button {
-  background-color: #00cc66;
+  background-color: #00cca0;
   border: none;
   color: #ffffff;
   font-weight: 600;
