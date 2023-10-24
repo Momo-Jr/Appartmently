@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import bathtubIcon from '../assets/svg/bathtubIcon.svg';
 import bedIcon from '../assets/svg/bedIcon.svg';

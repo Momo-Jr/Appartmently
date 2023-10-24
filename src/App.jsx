@@ -7,6 +7,7 @@ import Categories from './pages/Categories';
 import CreateListing from './pages/CreateListing';
 import Explore from './pages/Explore';
 import ForgotPassword from './pages/ForgotPassword';
+import Listing from './pages/Listing';
 import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import SignIn from './pages/SignIn';
@@ -28,6 +29,10 @@ function App() {
             <Route path='/profile' element={<Profile />} />
           </Route>
           <Route path='/sign-up' element={<SignUp />} />
+          <Route
+            path='/categories/:categoryName/:listingId'
+            element={<Listing />}
+          />
         </Routes>
       </Router>
       <ToastContainer />
