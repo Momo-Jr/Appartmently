@@ -43,17 +43,18 @@ function Listing() {
         <title>{listing.name}</title>
       </Helmet>
       <Swiper slidesPerView={1} pagination={{ clickable: true }}>
-        {listing.imgUrls.map((url, index) => (
-          <SwiperSlide key={index}>
-            <div
-              style={{
-                background: `url(${listing.imgUrls[index]}) center no-repeat`,
-                backgroundSize: 'cover',
-              }}
-              className='swiperSlideDiv'
-            ></div>
-          </SwiperSlide>
-        ))}
+        {listing.imgUrls &&
+          listing.imgUrls.map((url, index) => (
+            <SwiperSlide key={index}>
+              <div
+                style={{
+                  background: `url(${listing.imgUrls[index]}) center no-repeat`,
+                  backgroundSize: 'cover',
+                }}
+                className='swiperSlideDiv'
+              ></div>
+            </SwiperSlide>
+          ))}
       </Swiper>
 
       <div
@@ -112,7 +113,7 @@ function Listing() {
         <div className='leafletContainer'>
           <MapContainer
             style={{ height: '100%', width: '100%' }}
-            center={[listing.geolocation.lat, listing.geolocation.lng]}
+            // center={[listing.geolocation.lat, listing.geolocation.lng]}
             zoom={13}
             scrollWheelZoom={false}
           >
@@ -122,7 +123,7 @@ function Listing() {
             />
 
             <Marker
-              position={[listing.geolocation.lat, listing.geolocation.lng]}
+            // position={[listing.geolocation.lat, listing.geolocation.lng]}
             >
               <Popup>{listing.location}</Popup>
             </Marker>
