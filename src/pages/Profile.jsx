@@ -1,5 +1,5 @@
 import { getAuth, signOut, updateProfile } from 'firebase/auth';
-import { doc, updateDoc } from 'firebase/firestore';
+import { doc, updateDoc , deleteDoc , getDoc , query ,  } from 'firebase/firestore';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';

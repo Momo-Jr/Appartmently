@@ -14,7 +14,7 @@ import { db } from '../../firebase.config';
 import ListingItem from '../components/ListingItem';
 import Spinner from '../components/Spinner';
 function Category() {
-  const [listings, setListings] = useState(null);
+  const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [lastFetchedListing, setLastFetchedListing] = useState(null);
 
@@ -48,7 +48,7 @@ function Category() {
             data: doc.data(),
           });
         });
-
+        console.log(listings);
         setListings(listings);
         setLoading(false);
       } catch (error) {

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import rentCategoryImg from '../assets/jpg/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg';
 import sellCategoryImg from '../assets/jpg/henry-becerra-jsHk0zJfvSc-unsplash.jpg';
+import Slider from '../components/Slider';
 function Explore() {
   return (
     <div className='explore'>
@@ -8,7 +9,9 @@ function Explore() {
         <p className='pageHeader'>Explore</p>
       </header>
       <main>
-        <section>{/* Slider */}</section>
+        <section>
+          <Slider />
+        </section>
         <p className='exploreCategoryHeading'>Categories</p>
         <section className='exploreCategories'>
           <Link to='/categories/sale'>
